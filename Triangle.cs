@@ -9,9 +9,9 @@ public sealed class Triangle : IShape<TriangleType>
     // This handles cases like 1.0000000001 vs 1.0 caused by floating-point arithmetic.
     private const double Epsilon = 1e-9;
 
-    private double _sideA;
-    private double _sideB;
-    private double _sideC;
+    private readonly double _sideA;
+    private readonly double _sideB;
+    private readonly double _sideC;
 
     /// <summary>
     /// ctor.
